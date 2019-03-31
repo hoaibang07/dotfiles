@@ -7,6 +7,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Terminal\n\n"
 
+install_package "Gconfig2" "gconf2"
+
 execute "gsettings set org.gnome.desktop.interface monospace-font-name 'Monospace 12'" \
     "Change font size"
 
@@ -16,3 +18,9 @@ execute "gconftool-2 --set '/apps/gnome-terminal/profiles/Default/use_theme_back
          gconftool-2 --set '/apps/gnome-terminal/profiles/Default/background_color' --type string '#00002B2B3636' && \
          gconftool-2 --set '/apps/gnome-terminal/profiles/Default/foreground_color' --type string '#65657B7B8383'" \
     "Set custom terminal theme"
+
+execute "export HISTSIZE=10000" \
+	"Set history size = 10000"
+
+execute "export HISTFILESIZE=10000" \
+	"Set history file size = 10000"
