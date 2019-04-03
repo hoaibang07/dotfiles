@@ -13,6 +13,9 @@ execute "gsettings set org.gnome.desktop.background picture-options 'stretched'"
 execute "gsettings set org.gnome.desktop.wm.preferences button-layout 'close,maximize,minimize:'" \
     "Set close, maximize, minimize to left side"
 
+execute "gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'" \
+    "Enable ‘Minimize on Click’ for the Ubuntu Dock"
+
 execute "touch ~/Templates/'Untitled Document'" \
     "Add New Document into context menu in Nautilus"
 

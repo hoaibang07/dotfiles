@@ -10,3 +10,4 @@ print_in_purple "\n   Git\n\n"
 
 install_package "Git" "git"
 install_package "Curl" "curl"
+install_package "Gdebi" "gdebi-core"
