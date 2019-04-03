@@ -9,7 +9,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 print_in_purple "\n   Miscellaneous Tools\n\n"
 
 #install_package "ShellCheck" "shellcheck"
-#install_package "xclip" "xclip"
+install_package "xclip" "xclip"
 
 if [ -d "$HOME/.nvm" ]; then
 
