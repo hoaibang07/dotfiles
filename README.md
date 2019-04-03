@@ -48,20 +48,6 @@ The setup process will:
   [`Ubuntu`](src/os/preferences/ubuntu) preferences
 * Install [`vim` plugins](src/vim/vim/plugins)
 
-Setup process in action:
-
-<table>
-    <tbody>
-        <tr>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/19048636/e23e347a-89af-11e6-853c-98616b75b6ae.gif" alt="Setup process on Ubuntu" width="100%">
-            </td>
-        </tr>
-        <tr align="center">
-            <td>Ubuntu</td>
-        </td>
-    </tbody>
-</table>
 
 ## Customize
 
@@ -141,54 +127,6 @@ To update the dotfiles you can either run the [`setup` script][setup]
 or, if you want to just update one particular part, run the appropriate
 [`os` script](src/os).
 
-## Screenshots
-
-### Git
-
-Output for `git status`:
-
-<table>
-    <tbody>
-        <tr>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/8397636/3708d218-1ddb-11e5-9d40-21c6871271b9.png" alt="Output for Git status on Ubuntu" width="100%">
-            </td>
-        </tr>
-        <tr align="center">
-            <td>Ubuntu</td>
-        </td>
-    </tbody>
-</table>
-
-Output for `git log`:
-
-<table>
-    <tbody>
-        <tr>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/10560955/4b5e1300-7523-11e5-9e96-95ea67de9474.png" alt="Output for Git log on Ubuntu" width="100%">
-            </td>
-        </tr>
-        <tr align="center">
-            <td>Ubuntu</td>
-        </td>
-    </tbody>
-</table>
-
-### tmux & vim
-
-<table>
-    <tbody>
-        <tr>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/10560956/557ca2de-7523-11e5-9000-fc1e189a95f5.png" alt="tmux and vim on Ubuntu" width="100%">
-            </td>
-        </tr>
-        <tr align="center">
-            <td>Ubuntu</td>
-        </td>
-    </tbody>
-</table>
 
 ## License
 
