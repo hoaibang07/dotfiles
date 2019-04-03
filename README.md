@@ -14,9 +14,6 @@ files described in the [`Local Settings`](#local-settings) section.
     * [🔁 `~/.gitconfig.local`](#gitconfiglocal)
     * [⌨️  `~/.vimrc.local`](#vimrclocal)
 * [↕️  Update](#update)
-* [📸 Screenshots](#screenshots)
-  * [🔁 `git`](#git)
-  * [⌨️  `tmux` & `vim`](#tmux--vim)
 * [📄 License](#license)
 
 ## Setup
