@@ -10,8 +10,6 @@ update
 upgrade
 
 ./build-essentials.sh
-
-./git.sh
 ./../nvm.sh
 ./browsers.sh
 #./browsers.more.sh
