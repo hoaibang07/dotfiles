@@ -5,5 +5,5 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-#install_package "GNOME Vim" "vim-gnome"
-install_package "Neo Vim" "neovim"
+install_package "GNOME Vim" "vim-gnome"
+#install_package "Neo Vim" "neovim"
