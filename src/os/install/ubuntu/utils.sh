@@ -81,15 +81,16 @@ upgrade() {
 download_and_install() {
     declare -r URL="$2"
     declare -r PACKAGE_READABLE_NAME="$1"
+    declare -r PACKAGE_FILE_NAME="$3"
 
-    IFS='/' # space is set as delimiter
-    read -ra parts <<< "$URL" # str is read into an array as tokens separated by IFS
-    let len=${#parts[@]}
-    let lastPosition="len-1"
-    let fileName=${parts[$lastPotition]}
+    # IFS='/' # space is set as delimiter
+    # read -ra parts <<< "$URL" # str is read into an array as tokens separated by IFS
+    # let len=${#parts[@]}
+    # let lastPosition="len-1"
+    # let fileName=${parts[$lastPotition]}
 
-    execute "wget -P ~/Downloads $URL"
-    execute "sudo gdebi ~/Downloads/$fileName" "$PACKAGE_READABLE_NAME"
+    execute "wget -O ~/Downloads/$PACKAGE_FILE_NAME $URL" "Download $PACKAGE_READABLE_NAME"
+    execute "sudo gdebi ~/Downloads/$PACKAGE_FILE_NAME" "$PACKAGE_READABLE_NAME"
 }
 
 snap_install_package() {
