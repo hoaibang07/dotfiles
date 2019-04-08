@@ -9,15 +9,16 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 update
 upgrade
 
+./basetools.sh
 ./build-essentials.sh
 ./../nvm.sh
 ./browsers.sh
 #./browsers.more.sh
 ./fonts.sh
-./compression_tools.sh
-./image_tools.sh
 ./misc.sh
 ./misc_tools.sh
+./compression_tools.sh
+./image_tools.sh
 ./../npm.sh
 ./tmux.sh
 ./../vim.sh
