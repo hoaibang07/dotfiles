@@ -72,3 +72,25 @@ upgrade() {
         "APT (upgrade)"
 
 }
+
+download_and_install() {
+    declare -r URL="$2"
+    declare -r PACKAGE_READABLE_NAME="$1"
+
+    IFS='/' # space is set as delimiter
+    read -ra parts <<< "$URL" # str is read into an array as tokens separated by IFS
+    let len=${#parts[@]}
+    let lastPosition="len-1"
+    let fileName=${parts[$lastPotition]}
+
+    execute "wget -P ~/Downloads $URL"
+    execute "sudo gdebi ~/Downloads/$fileName" "$PACKAGE_READABLE_NAME"
+}
+
+snap_install_package() {
+    declare -r PACKAGE="$2"
+    declare -r PACKAGE_READABLE_NAME="$1"
+    execute \
+        "sudo snap install $PACKAGE" \
+        "$PACKAGE_READABLE_NAME"
+}
