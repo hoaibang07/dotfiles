@@ -13,6 +13,11 @@ add_key() {
 
 }
 
+add_key_ssl() {
+    curl -fsSL "$1" | sudo apt-key add - &> /dev/null
+
+}
+
 add_ppa() {
     sudo add-apt-repository -y ppa:"$1" &> /dev/null
 }
