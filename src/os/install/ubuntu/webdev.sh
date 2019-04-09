@@ -19,6 +19,9 @@ sudo apt-get -y install php7.2-opcache php-apcu
 #restart apache
 sudo systemctl restart apache2
 
+#make phpinfo
+#sudo nano /var/www/html/phpinfo.php; <?php phpinfo( ); ?>
+
 #mysql
 sudo apt-get -y install mysql-server mysql-client
 
