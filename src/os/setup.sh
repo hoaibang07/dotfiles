@@ -264,6 +264,8 @@ main() {
 
     ./preferences/main.sh
 
+    ./clean_directories.sh
+
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     # if cmd_exists "git"; then
