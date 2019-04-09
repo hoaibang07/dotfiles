@@ -21,3 +21,10 @@ sudo systemctl restart apache2
 
 #mysql
 sudo apt-get -y install mysql-server mysql-client
+
+#Secure your MySQL server
+sudo mysql_secure_installation
+#N,Y,Y,Y,Y
+
+#Install workbench
+sudo apt install mysql-workbench
