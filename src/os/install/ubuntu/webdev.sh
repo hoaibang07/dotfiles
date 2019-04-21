@@ -22,6 +22,11 @@ sudo systemctl restart apache2
 #make phpinfo
 #sudo nano /var/www/html/phpinfo.php; <?php phpinfo( ); ?>
 
+#install php 7.1
+sudo add-apt-repository ppa:ondrej/php
+#php71 and common extensions
+sudo apt install php7.1 php7.1-common php7.1-opcache php7.1-mcrypt php7.1-cli php7.1-gd php7.1-curl php7.1-mysql php7.1-mbstring
+
 #mysql
 sudo apt-get -y install mysql-server mysql-client
 
