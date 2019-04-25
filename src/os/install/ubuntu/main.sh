@@ -19,8 +19,9 @@ upgrade
 ./misc_tools.sh
 ./compression_tools.sh
 ./image_tools.sh
+./guitools.sh
 ./../npm.sh
 ./tmux.sh
 ./../vim.sh
-
+./remove_default_apps.sh
 ./cleanup.sh
