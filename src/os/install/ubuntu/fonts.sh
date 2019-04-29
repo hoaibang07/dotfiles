@@ -10,7 +10,7 @@ print_in_purple "\n   Fonts\n\n"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-if ! package_is_installed "ttf-mscorefonts-installe"; then
+if ! package_is_installed "ttf-mscorefonts-installer"; then
 
 	execute "sudo apt-get --yes --force-yes install ttf-mscorefonts-installer" \
 	"Install microsoft font"
