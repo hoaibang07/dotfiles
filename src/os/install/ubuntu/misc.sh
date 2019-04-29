@@ -19,7 +19,7 @@ if ! package_is_installed "code"; then
     add_key "https://packages.microsoft.com/keys/microsoft.asc" \
         || print_error "Visual studio code (add key)"
 
-    add_to_source_list "[arch=amd64] https://packages.microsoft.com/repos/vscode stable main" "visual-studio-code.list" \
+    add_to_source_list "[arch=amd64] https://packages.microsoft.com/repos/vscode stable main" "vscode.list" \
         || print_error "Visual Studio Code (add to package resource list)"
 
     update &> /dev/null \

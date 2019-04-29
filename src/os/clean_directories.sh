@@ -5,7 +5,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-create_directories() {
+clean_directories() {
 
     declare -a DIRECTORIES=(
         "$HOME/Downloads/dotfiles_tmp"
@@ -20,8 +20,8 @@ create_directories() {
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 main() {
-    print_in_purple "\n • Create directories\n\n"
-    create_directories
+    print_in_purple "\n • Clean temple directories\n\n"
+    clean_directories
 }
 
 main
