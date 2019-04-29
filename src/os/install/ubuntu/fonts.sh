@@ -14,7 +14,8 @@ if ! package_is_installed "ttf-mscorefonts-installer"; then
 	echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
 	execute "sudo apt-get install ttf-mscorefonts-installer" \
 	"Install microsoft font"
-
+else
+    print_success "microsoft TTF Fonts"
 fi
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
