@@ -9,13 +9,11 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 print_in_purple "\n   Remove Default Applications\n\n"
 
 #Default game
-execute \
-        "sudo apt-get remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku" \
+execute "sudo apt-get remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku" \
         "Remove default games"
 
 #Default apps
-execute \
-        "sudo apt-get purge totem totem-plugins" \
+execute "sudo apt-get purge totem totem-plugins" \
         "Remove default video app"
 
-remove_apt_package "rhythmbox" "Remove Rhythmbox"
+remove_apt_package "Remove Rhythmbox" "rhythmbox"
