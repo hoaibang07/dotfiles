@@ -29,9 +29,10 @@ if ! package_is_installed "code"; then
 
     update &> /dev/null \
         || print_error "Visual Studio Code (resync package index files)"
-
+    install_package "Visual studio code" "code"
+else
+    print_success "Visual studio code"
 fi
-install_package "Visual studio code" "code"
 
 if ! package_is_installed "sublime-text"; then
 
@@ -43,9 +44,10 @@ if ! package_is_installed "sublime-text"; then
 
     update &> /dev/null \
         || print_error "Sublime text (resync package index files)"
-
+    install_package "Sublime text" "sublime-text"
+else
+    print_success "Sublime text"
 fi
-install_package "Sublime text" "sublime-text"
 
 download_and_install "Skype" "https://repo.skype.com/latest/skypeforlinux-64.deb" "skypeforlinux"
 snap_install_package "Slack" "slack --classic"
