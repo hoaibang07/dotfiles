@@ -13,7 +13,6 @@ create_symlinks() {
         "shell/autocomplete/$(get_os)/bash_autocomplete"
         "shell/bash_exports"
         "shell/bash_functions"
-        "shell/bash_logout"
         "shell/bash_options"
         "shell/bash_profile"
         "shell/bash_prompt"

@@ -196,11 +196,17 @@ set_prompts() {
 
 }
 
+set_orthers() {
+    # make less more friendly for non-text input files, see lesspipe(1)
+    [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+}
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 main() {
     enable_color_support
     set_prompts
+    set_orthers
 }
 
 main
@@ -212,3 +218,4 @@ main
 unset -f enable_color_support
 unset -f main
 unset -f set_prompts
+unset -f set_orthers
