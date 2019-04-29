@@ -81,18 +81,30 @@ upgrade() {
 download_and_install() {
     declare -r URL="$2"
     declare -r PACKAGE_READABLE_NAME="$1"
-
-    fileName="$(basename -- $URL)"
-    execute "wget -O $HOME/Downloads/dotfiles_tmp/$fileName $URL" "Downloading $PACKAGE_READABLE_NAME"
-    execute "sudo gdebi --option=APT::Get::force-yes=1,APT::Get::Assume-Yes=1 -n $HOME/Downloads/dotfiles_tmp/$fileName" "Install $PACKAGE_READABLE_NAME"
+    declare -r PACKAGE="$3"
+    if ! package_is_installed "$PACKAGE"; then
+        fileName="$(basename -- $URL)"
+        execute "wget -O $HOME/Downloads/dotfiles_tmp/$fileName $URL" "Downloading $PACKAGE_READABLE_NAME"
+        execute "sudo gdebi --option=APT::Get::force-yes=1,APT::Get::Assume-Yes=1 -n $HOME/Downloads/dotfiles_tmp/$fileName" "Install $PACKAGE_READABLE_NAME"
+    else
+        print_success "$PACKAGE_READABLE_NAME"
+    fi    
 }
 
 snap_install_package() {
     declare -r PACKAGE="$2"
     declare -r PACKAGE_READABLE_NAME="$1"
-    execute \
+    if ! snap_package_is_installed "$PACKAGE"; then
+        execute \
         "sudo snap install $PACKAGE" \
         "$PACKAGE_READABLE_NAME"
+    else
+        print_success "$PACKAGE_READABLE_NAME"
+    fi
+}
+
+snap_package_is_installed() {
+    snap list | grep "$1" &> /dev/null
 }
 
 remove_apt_package() {

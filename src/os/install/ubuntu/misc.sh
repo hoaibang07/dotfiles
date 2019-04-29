@@ -42,7 +42,7 @@ if ! package_is_installed "sublime-text"; then
 fi
 install_package "Sublime text" "sublime-text"
 
-download_and_install "Skype" "https://repo.skype.com/latest/skypeforlinux-64.deb"
+download_and_install "Skype" "https://repo.skype.com/latest/skypeforlinux-64.deb" "skypeforlinux"
 snap_install_package "Slack" "slack --classic"
 install_package "Terminator" "terminator"
-download_and_install "Gitkraken" "https://release.gitkraken.com/linux/gitkraken-amd64.deb"
+download_and_install "Gitkraken" "https://release.gitkraken.com/linux/gitkraken-amd64.deb" "gitkraken"
