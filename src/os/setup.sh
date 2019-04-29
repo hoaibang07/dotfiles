@@ -264,7 +264,7 @@ main() {
 
     ./preferences/main.sh
 
-    ./clean_directories.sh
+    #./clean_directories.sh
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
