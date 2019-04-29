@@ -111,6 +111,6 @@ remove_apt_package() {
     declare -r PACKAGE="$2"
     declare -r PACKAGE_READABLE_NAME="$1"
     execute \
-        "sudo apt-get remove $PACKAGE" \
+        "sudo apt-get -y remove $PACKAGE" \
         "$PACKAGE_READABLE_NAME"
 }
