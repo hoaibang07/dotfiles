@@ -279,10 +279,6 @@ skip_questions() {
 
 }
 
-package_is_installed() {
-    dpkg -s "$1" &> /dev/null
-}
-
 show_spinner() {
 
     local -r FRAMES='/-\|'
