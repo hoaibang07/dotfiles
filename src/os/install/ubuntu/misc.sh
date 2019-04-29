@@ -11,8 +11,13 @@ print_in_purple "\n   Miscellaneous\n\n"
 install_package "Transmission" "transmission"
 install_package "VLC" "vlc"
 
-add_ppa "yannubuntu/boot-repair"
-install_package "Install Boot repair" "boot-repair"
+if ! package_is_installed "boot-repair"; then
+    add_ppa "yannubuntu/boot-repair"
+    install_package "Install Boot repair" "boot-repair"
+else
+    print_success "Boot repair"
+fi
+
 
 if ! package_is_installed "code"; then
 

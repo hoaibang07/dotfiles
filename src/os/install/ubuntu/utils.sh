@@ -23,6 +23,7 @@ add_ppa() {
 }
 
 add_to_source_list() {
+    sudo rm -rf '/etc/apt/sources.list.d/$2'
     sudo sh -c "printf 'deb $1' >> '/etc/apt/sources.list.d/$2'"
 }
 
