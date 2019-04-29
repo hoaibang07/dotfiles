@@ -8,7 +8,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 create_symlinks() {
 
     declare -a FILES_TO_SYMLINK=(
-        "shell/aliases/bash_init"
+        "shell/bash_init"
         "shell/aliases/bash_aliases"
         "shell/autocomplete/$(get_os)/bash_autocomplete"
         "shell/bash_exports"
