@@ -6,10 +6,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_in_purple "\n   Miscellaneous Tools\n\n"
+print_in_purple "\n   Yarn\n\n"
 
-install_package "ShellCheck" "shellcheck"
-install_package "xclip" "xclip"
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 if [ -d "$HOME/.nvm" ]; then
 

@@ -18,4 +18,3 @@ else
     print_success "microsoft TTF Fonts"
 fi
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

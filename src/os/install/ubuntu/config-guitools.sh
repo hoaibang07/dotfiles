@@ -8,6 +8,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   GUI config Tools\n\n"
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 install_package "xdotool" "xdotool"
 install_package "gnome-tweak-tool" "gnome-tweak-tool"
 install_package "dconf-editor" "dconf-editor"

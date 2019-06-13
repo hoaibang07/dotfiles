@@ -25,4 +25,5 @@ fi
 
 install_package "Google Chrome Stable" "google-chrome-stable"
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+install_package "Chromium" "chromium-browser"
+install_package "Flash" "flashplugin-installer"

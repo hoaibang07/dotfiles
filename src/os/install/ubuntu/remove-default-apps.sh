@@ -6,7 +6,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_in_purple "\n   Remove Default Applications\n\n"
+print_in_purple "\n   Remove Default Applications and Game\n\n"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 #Default game
 execute "sudo apt-get -y remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku" \

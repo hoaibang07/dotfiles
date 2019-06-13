@@ -6,18 +6,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_in_purple "\n   Miscellaneous\n\n"
+print_in_purple "\n   Editors\n\n"
 
-install_package "Transmission" "transmission"
-install_package "VLC" "vlc"
-
-if ! package_is_installed "boot-repair"; then
-    add_ppa "yannubuntu/boot-repair"
-    install_package "Install Boot repair" "boot-repair"
-else
-    print_success "Boot repair"
-fi
-
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 if ! package_is_installed "code"; then
 
@@ -48,8 +39,3 @@ if ! package_is_installed "sublime-text"; then
 else
     print_success "Sublime text"
 fi
-
-download_and_install "Skype" "https://repo.skype.com/latest/skypeforlinux-64.deb" "skypeforlinux"
-snap_install_package "Slack" "slack --classic"
-install_package "Terminator" "terminator"
-download_and_install "Gitkraken" "https://release.gitkraken.com/linux/gitkraken-amd64.deb" "gitkraken"
