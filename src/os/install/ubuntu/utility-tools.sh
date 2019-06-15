@@ -10,6 +10,7 @@ print_in_purple "\n   Utilities\n\n"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+install_package "net-tools" "Net tools"
 install_package "ShellCheck" "shellcheck"
 install_package "xclip" "xclip"
 install_package "rar" "rar"
