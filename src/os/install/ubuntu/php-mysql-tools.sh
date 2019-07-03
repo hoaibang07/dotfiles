@@ -12,7 +12,9 @@ print_in_purple "\n   Apache2 - PHP, MySQL\n\n"
 
 #apache2
 if ! package_is_installed "apache2"; then
-	sudo apt-get -y install apache2
+    execute \
+            "sudo apt-get -y install apache2" \
+            "Install Apache2"
 else
     print_success "apache2"
 fi
@@ -29,7 +31,7 @@ fi
 
 #restart apache
 execute \
-		"systemctl restart apache2" \
+		"sudo systemctl restart apache2" \
 		"restart apache2"
 
 #mysql

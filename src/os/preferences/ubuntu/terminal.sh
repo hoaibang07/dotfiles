@@ -8,9 +8,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Terminal\n\n"
 
-execute "gsettings set org.gnome.desktop.interface monospace-font-name 'Monospace 12'" \
-    "Change font size"
-
 #hstr (history searching), support ubuntu <= 18.04
 highest_version="19.04"
 if (( $(echo "$(get_os_version) < $highest_version" |bc -l) )); then
