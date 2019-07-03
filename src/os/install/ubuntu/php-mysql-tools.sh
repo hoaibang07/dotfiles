@@ -59,4 +59,6 @@ if ! package_is_installed "dbeaver-ce"; then
     update &> /dev/null \
         || print_error "dbeaver (resync package index files)"
 
+    install_package "dbeaver-ce" "dbeaver-ce"
+
 fi
