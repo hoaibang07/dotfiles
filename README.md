@@ -1,19 +1,16 @@
 # [HoaiNP](https://github.com/hoaibang07)’s dotfiles
 
-These are the base dotfiles that I start with when I set up a
-new environment. For more specific local needs I use the `.local`
-files described in the [`Local Settings`](#local-settings) section.
+My dotfiles for Ubuntu, It is forked from [Cătălin's dotfiles][dotfiles Cătălin]
 
 ## Table of Contents
 
 * [🔧 Setup](#setup)
+* [💿 Software](#software)
 * [💄 Customize](#customize)
-  * [🔀 Forks](#forks)
   * [🌐 Local Settings](#local-settings)
     * [🐚 `~/.bash.local`](#bashlocal)
     * [🔁 `~/.gitconfig.local`](#gitconfiglocal)
     * [⌨️  `~/.vimrc.local`](#vimrclocal)
-* [↕️  Update](#update)
 * [📄 License](#license)
 
 ## Setup
@@ -28,7 +25,6 @@ understand [what it does][setup]. Seriously, **DON'T**!)
 |:---|:---|
 | `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/hoaibang07/dotfiles/master/src/os/setup.sh)"` |
 
-That's it! :sparkles:
 
 The setup process will:
 
@@ -44,6 +40,90 @@ The setup process will:
 * Set custom
   [`Ubuntu`](src/os/preferences/ubuntu) preferences
 * Install [`vim` plugins](src/vim/vim/plugins)
+
+## Software
+This dotfiles add and remove the bellow software:
+
+### Base tool
+* apt-transport-https
+* ca-certificates
+* software-properties-common
+* git
+* curl
+* gdebi-core
+* composer
+* default-jre
+* nodejs 
+### Build essentials
+* build-essential
+* debian-archive-keyring
+* gcc
+
+### NVM
+* nvm
+
+### Browsers
+* Google Chrome
+* Chromium
+* Adobe Flash
+
+### Fonts
+* Microsoft TTF Fonts
+
+### Editors
+* Visual studio code
+* Sublime text
+
+### Yarn
+* yarn
+
+### Media tools
+* Gimp
+* VLC
+
+### Utility tools
+* net-tools
+* shellcheck
+* xclip
+* rar
+* unrar
+* transmission
+* boot-repair
+* slack
+
+### Keyboard
+* ibus-teni
+
+### Config GUI Tools
+* xdotool
+* gnome-tweak-tool
+* dconf-editor
+
+### NPM
+* npm
+
+### Tmux
+* tmux
+
+### VIM
+* Vim and Plugins
+
+### Developer tools
+* Gitkraken
+* Docker
+
+### Apache2, PHP and MySQL
+* apache2
+* php 7.1 and extensions
+* mysql
+
+### Remove default apps and games
+* aisleriot
+* gnome-mahjongg
+* gnome-mines
+* gnome-sudoku
+* totem
+* rhythmbox
 
 
 ## Customize
@@ -101,8 +181,8 @@ such as the `git` user credentials, e.g.:
 
 [user]
 
-    name = HoaiNP
-    email = hoaibang07@example.com
+    name = yourusername
+    email = youremail@example.com
     signingkey = XXXXXXXX
 ```
 
@@ -112,25 +192,13 @@ The `~/.vimrc.local` file it will be automatically sourced after
 `~/.vimrc`, thus, allowing its content to add or overwrite the
 settings from `~/.vimrc`.
 
-### Forks
-
-If you decide to fork this project, do not forget to substitute
-my username with your own in the [`setup` snippets](#setup) and
-[in the `setup` script][setup line]
-
-## Update
-
-To update the dotfiles you can either run the [`setup` script][setup]
-or, if you want to just update one particular part, run the appropriate
-[`os` script](src/os).
-
 
 ## License
 
 The code is available under the [MIT license][license].
 
 <!-- Link labels: -->
-
+[my dotfiles]: https://github.com/hoaibang07/dotfiles
 [directories]: src/os/create_directories.sh
 [dotfiles mathias]: https://github.com/mathiasbynens/dotfiles
 [github mathias ]: https://github.com/mathiasbynens

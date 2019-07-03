@@ -10,7 +10,7 @@ print_in_purple "\n   Keyboard\n\n"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-if ! package_is_installed "boot-repair"; then
+if ! package_is_installed "ibus-teni"; then
     add_ppa "teni-ime/ibus-teni"
     install_package "Install ibus-teni" "ibus-teni"
     execute \
