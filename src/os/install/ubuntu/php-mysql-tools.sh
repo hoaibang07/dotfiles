@@ -25,14 +25,14 @@ if ! package_is_installed "php"; then
     		"sudo apt-get -y install php7.1 php7.1-common php7.1-opcache php7.1-mcrypt php7.1-cli php7.1-gd php7.1-curl php7.1-mysql php7.1-mbstring" \
     		"Install PHP 7.1 and extensions"
     sudo sh -c "printf '<?php phpinfo(); ?>' >> '/var/www/html/phpinfo.php'"
+    
+    #restart apache
+    execute \
+        "sudo systemctl restart apache2" \
+        "restart apache2"
 else
     print_success "PHP"
 fi
-
-#restart apache
-execute \
-		"sudo systemctl restart apache2" \
-		"restart apache2"
 
 #mysql
 if ! package_is_installed "mysql"; then
