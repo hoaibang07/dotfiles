@@ -19,6 +19,12 @@ install_npm_package() {
 main() {
 
     print_in_purple "\n   npm\n\n"
+    
+    execute \
+        "sudo chown -R $USER:$GROUP ~/.npm"
+
+    execute \
+        "sudo chown -R $USER:$GROUP ~/.config"
 
     install_npm_package "npm (update)" "npm"
 
