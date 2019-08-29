@@ -35,7 +35,7 @@ else
 fi
 
 #mysql
-if ! package_is_installed "mysql"; then
+if ! [ -e /usr/bin/mysql ]; then
     execute \
     		"sudo apt-get -y install mysql-server mysql-client" \
     		"Install MySQL"
