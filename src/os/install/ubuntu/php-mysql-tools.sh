@@ -19,7 +19,7 @@ else
     print_success "apache2"
 fi
 
-if ! package_is_installed "php"; then
+if ! [ -e /usr/bin/php ]; then
     add_ppa "ondrej/php"
     execute \
     		"sudo apt-get -y install php7.1 php7.1-common php7.1-opcache php7.1-mcrypt php7.1-cli php7.1-gd php7.1-curl php7.1-mysql php7.1-mbstring" \
