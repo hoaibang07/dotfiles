@@ -21,10 +21,10 @@ main() {
     print_in_purple "\n   npm\n\n"
     
     execute \
-        "sudo chown -R $USER:$GROUP ~/.npm"
+        "sudo chown -R $USER ~/.npm"
 
     execute \
-        "sudo chown -R $USER:$GROUP ~/.config"
+        "sudo chown -R $USER ~/.config"
 
     install_npm_package "npm (update)" "npm"
 
