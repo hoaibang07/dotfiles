@@ -25,4 +25,14 @@ else
     print_success "Visual studio code"
 fi
 
-snap_install_package "sublime-text" "sublime-text --classic"
+if ! package_is_installed "sublime-text"; then
+
+    execute \
+        "sudo add-apt-repository 'deb https://download.sublimetext.com/ apt/stable/'" \
+        "Add sublimetext repository"
+    update &> /dev/null \
+        || print_error "sublimetext (resync package index files)"
+    install_package "sublimetext" "sublime-text"
+else
+    print_success "sublimetext"
+fi
